@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4D8C955323ECB26E0093A83A /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C955223ECB26E0093A83A /* Crypto.swift */; };
+		4D8C955523ECD47A0093A83A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C955423ECD47A0093A83A /* InfoViewController.swift */; };
 		4DF158D123EBC1C5000C5626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D023EBC1C5000C5626 /* AppDelegate.swift */; };
 		4DF158D323EBC1C5000C5626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */; };
-		4DF158D523EBC1C5000C5626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D423EBC1C5000C5626 /* ViewController.swift */; };
+		4DF158D523EBC1C5000C5626 /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D423EBC1C5000C5626 /* PasswordsViewController.swift */; };
 		4DF158D823EBC1C5000C5626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF158D623EBC1C5000C5626 /* Main.storyboard */; };
 		4DF158DA23EBC1C8000C5626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF158D923EBC1C8000C5626 /* Assets.xcassets */; };
 		4DF158DD23EBC1C8000C5626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF158DB23EBC1C8000C5626 /* LaunchScreen.storyboard */; };
@@ -19,10 +20,11 @@
 
 /* Begin PBXFileReference section */
 		4D8C955223ECB26E0093A83A /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		4D8C955423ECD47A0093A83A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		4DF158CD23EBC1C5000C5626 /* Perfect Paper Passwords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Perfect Paper Passwords.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF158D023EBC1C5000C5626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4DF158D423EBC1C5000C5626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DF158D423EBC1C5000C5626 /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
 		4DF158D723EBC1C5000C5626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DF158D923EBC1C8000C5626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DF158DC23EBC1C8000C5626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D8C955623ECD4870093A83A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D8C955423ECD47A0093A83A /* InfoViewController.swift */,
+				4DF158D423EBC1C5000C5626 /* PasswordsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		4DF158C423EBC1C5000C5626 = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +71,9 @@
 		4DF158CF23EBC1C5000C5626 /* Perfect Paper Passwords */ = {
 			isa = PBXGroup;
 			children = (
+				4D8C955623ECD4870093A83A /* ViewControllers */,
 				4DF158D023EBC1C5000C5626 /* AppDelegate.swift */,
 				4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */,
-				4DF158D423EBC1C5000C5626 /* ViewController.swift */,
 				4DF158D623EBC1C5000C5626 /* Main.storyboard */,
 				4DF158D923EBC1C8000C5626 /* Assets.xcassets */,
 				4DF158DB23EBC1C8000C5626 /* LaunchScreen.storyboard */,
@@ -144,10 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF158D523EBC1C5000C5626 /* ViewController.swift in Sources */,
+				4DF158D523EBC1C5000C5626 /* PasswordsViewController.swift in Sources */,
 				4DF158D123EBC1C5000C5626 /* AppDelegate.swift in Sources */,
 				4D8C955323ECB26E0093A83A /* Crypto.swift in Sources */,
 				4DF158D323EBC1C5000C5626 /* SceneDelegate.swift in Sources */,
+				4D8C955523ECD47A0093A83A /* InfoViewController.swift in Sources */,
 				4DF158E523EBC4C2000C5626 /* UInt128.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
