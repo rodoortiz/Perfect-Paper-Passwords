@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D8C955323ECB26E0093A83A /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C955223ECB26E0093A83A /* Crypto.swift */; };
 		4DF158D123EBC1C5000C5626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D023EBC1C5000C5626 /* AppDelegate.swift */; };
 		4DF158D323EBC1C5000C5626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */; };
 		4DF158D523EBC1C5000C5626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D423EBC1C5000C5626 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D8C955223ECB26E0093A83A /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		4DF158CD23EBC1C5000C5626 /* Perfect Paper Passwords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Perfect Paper Passwords.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF158D023EBC1C5000C5626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4DF158DB23EBC1C8000C5626 /* LaunchScreen.storyboard */,
 				4DF158DE23EBC1C8000C5626 /* Info.plist */,
 				4DF158E423EBC4C2000C5626 /* UInt128.swift */,
+				4D8C955223ECB26E0093A83A /* Crypto.swift */,
 			);
 			path = "Perfect Paper Passwords";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				4DF158D523EBC1C5000C5626 /* ViewController.swift in Sources */,
 				4DF158D123EBC1C5000C5626 /* AppDelegate.swift in Sources */,
+				4D8C955323ECB26E0093A83A /* Crypto.swift in Sources */,
 				4DF158D323EBC1C5000C5626 /* SceneDelegate.swift in Sources */,
 				4DF158E523EBC4C2000C5626 /* UInt128.swift in Sources */,
 			);
