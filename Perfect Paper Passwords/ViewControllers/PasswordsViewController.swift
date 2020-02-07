@@ -9,14 +9,13 @@
 import UIKit
 
 class PasswordsViewController: UIViewController {
-
-
+    
     @IBOutlet weak var printPassword: UITextField!
     
-    func showPassword() {
+    @IBAction func newCardButton(_ sender: UIButton) {
         printPassword.text = getPassword()
-        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         printPassword.text = getPassword()

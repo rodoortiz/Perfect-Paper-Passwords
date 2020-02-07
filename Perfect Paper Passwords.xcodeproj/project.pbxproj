@@ -56,6 +56,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		4D8C955D23EDCAB90093A83A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D8C955B23ED93290093A83A /* Alfabet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4DF158C423EBC1C5000C5626 = {
 			isa = PBXGroup;
 			children = (
@@ -75,12 +83,12 @@
 		4DF158CF23EBC1C5000C5626 /* Perfect Paper Passwords */ = {
 			isa = PBXGroup;
 			children = (
+				4D8C955D23EDCAB90093A83A /* Models */,
 				4D8C955623ECD4870093A83A /* ViewControllers */,
 				4DF158D023EBC1C5000C5626 /* AppDelegate.swift */,
 				4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */,
 				4DF158E423EBC4C2000C5626 /* UInt128.swift */,
 				4D8C955223ECB26E0093A83A /* Crypto.swift */,
-				4D8C955B23ED93290093A83A /* Alfabet.swift */,
 				4D8C955923ED87160093A83A /* GenerateCards.swift */,
 				4DF158D623EBC1C5000C5626 /* Main.storyboard */,
 				4DF158DB23EBC1C8000C5626 /* LaunchScreen.storyboard */,

@@ -10,18 +10,10 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
-    
     @IBOutlet weak var keyLabel: UILabel!
-    
-    
-    @IBAction func generateKeyButton(_ sender: UIButton) {
-        keyLabel.text = generateEncodedKey()
-        getPassword()
         
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        keyLabel.text = generateEncodedKey()
     }
     
     

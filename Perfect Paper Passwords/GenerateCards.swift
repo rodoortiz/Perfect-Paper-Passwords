@@ -10,18 +10,22 @@ import Foundation
 
 var counter128bit: UInt128 = 0
 
-var passwordSet = ["a", "b", "c", "d"]
-
 func getPassword() -> String {
     var password = ""
+    var dividend = getCharacterIndex(counter: counter128bit)
+    
     for _ in 0...3 {
-        let characterIndexStr = String(getCharacterIndex(counter: counter128bit))
+        let reminder = dividend%64
+        dividend = dividend/64
+        print(dividend)
+        let characterIndexStr = String(reminder)
         let characterIndex = Int(characterIndexStr)
-        counter128bit += 1
-//        passwordSet[i] = alfabetSet[characterIndex!]
-        password = password + alfabetSet[characterIndex!]
         
+        password = password + alfabetSet[characterIndex!]
     }
+    
+    counter128bit += 1
     
     return password
 }
+
