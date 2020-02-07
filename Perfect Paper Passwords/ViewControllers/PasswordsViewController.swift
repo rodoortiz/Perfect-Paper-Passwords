@@ -10,9 +10,16 @@ import UIKit
 
 class PasswordsViewController: UIViewController {
 
+
+    @IBOutlet weak var printPassword: UITextField!
+    
+    func showPassword() {
+        printPassword.text = getPassword()
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        printPassword.text = getPassword()
     }
 }
 

@@ -9,8 +9,29 @@
 import Foundation
 import CryptoKit
 
-let key = SymmetricKey(size: .bits256)
+func generateKey() -> SymmetricKey {
+    let key = SymmetricKey(size: .bits256)
+    
+    return key
+}
+func generateEncodedKey() -> String {
+    let valueKey = generateKey().withUnsafeBytes{
+        return Data(Array($0)).base64EncodedString()
+    }
+    
+    return valueKey
+}
 
-let valueKey = key.withUnsafeBytes{
-    return Data(Array($0)).base64EncodedString()
+func counter() -> UInt128 {
+    counter128bit += 1
+    
+    return counter128bit
+}
+
+func getCharacterIndex(counter: UInt128) -> UInt64 {
+    let dataCounter: Data = withUnsafeBytes(of: counter) { Data($0) }
+    let sealedBox = try! AES.GCM.seal(dataCounter, using: generateKey())
+    let bitsInt = sealedBox.ciphertext.withUnsafeBytes {$0.bindMemory(to: UInt64.self)[0]}
+
+    return (bitsInt%64)
 }

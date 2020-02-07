@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CryptoKit
 
 class InfoViewController: UIViewController {
 
@@ -16,17 +15,13 @@ class InfoViewController: UIViewController {
     
     
     @IBAction func generateKeyButton(_ sender: UIButton) {
-        let key = SymmetricKey(size: .bits256)
-
-        let valueKey = key.withUnsafeBytes{
-            return Data(Array($0)).base64EncodedString()
-        }
-        keyLabel.text = valueKey
-
+        keyLabel.text = generateEncodedKey()
+        getPassword()
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        keyLabel.text = valueKey
+        keyLabel.text = generateEncodedKey()
     }
     
     
