@@ -74,12 +74,12 @@
 				4D8C955623ECD4870093A83A /* ViewControllers */,
 				4DF158D023EBC1C5000C5626 /* AppDelegate.swift */,
 				4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */,
-				4DF158D623EBC1C5000C5626 /* Main.storyboard */,
-				4DF158D923EBC1C8000C5626 /* Assets.xcassets */,
-				4DF158DB23EBC1C8000C5626 /* LaunchScreen.storyboard */,
-				4DF158DE23EBC1C8000C5626 /* Info.plist */,
 				4DF158E423EBC4C2000C5626 /* UInt128.swift */,
 				4D8C955223ECB26E0093A83A /* Crypto.swift */,
+				4DF158D623EBC1C5000C5626 /* Main.storyboard */,
+				4DF158DB23EBC1C8000C5626 /* LaunchScreen.storyboard */,
+				4DF158D923EBC1C8000C5626 /* Assets.xcassets */,
+				4DF158DE23EBC1C8000C5626 /* Info.plist */,
 			);
 			path = "Perfect Paper Passwords";
 			sourceTree = "<group>";

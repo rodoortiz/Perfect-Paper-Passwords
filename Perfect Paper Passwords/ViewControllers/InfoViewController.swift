@@ -7,13 +7,27 @@
 //
 
 import UIKit
+import CryptoKit
 
 class InfoViewController: UIViewController {
 
+    
+    @IBOutlet weak var keyLabel: UILabel!
+    
+    
+    @IBAction func generateKeyButton(_ sender: UIButton) {
+        let key = SymmetricKey(size: .bits256)
+
+        let valueKey = key.withUnsafeBytes{
+            return Data(Array($0)).base64EncodedString()
+        }
+        keyLabel.text = valueKey
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        keyLabel.text = valueKey
     }
+    
     
 }

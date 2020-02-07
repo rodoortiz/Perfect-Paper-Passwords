@@ -9,4 +9,8 @@
 import Foundation
 import CryptoKit
 
+let key = SymmetricKey(size: .bits256)
 
+let valueKey = key.withUnsafeBytes{
+    return Data(Array($0)).base64EncodedString()
+}
