@@ -11,10 +11,7 @@ import CryptoKit
 
 func generateKey() -> SymmetricKey {
     let key = SymmetricKey(size: .bits256)
-    let value = key.withUnsafeBytes{
-        return Data(Array($0)).base64EncodedString()
-    }
-    print(value)
+
     return key
 }
 func generateEncodedKey() -> String {
@@ -31,10 +28,10 @@ func counter() -> UInt128 {
     return counter128bit
 }
 
-func getCharacterIndex(counter: UInt128) -> UInt64 {
+func getCharacterIndex(counter: UInt128) -> UInt128 {
     let dataCounter: Data = withUnsafeBytes(of: counter) { Data($0) }
     let sealedBox = try! AES.GCM.seal(dataCounter, using: generateKey())
-    let bitsInt = sealedBox.ciphertext.withUnsafeBytes {$0.bindMemory(to: UInt64.self)[0]}
+    let cipher = sealedBox.ciphertext.withUnsafeBytes {$0.bindMemory(to: UInt128.self)[0]}
 
-    return (bitsInt)
+    return (cipher%64)
 }

@@ -9,23 +9,26 @@
 import Foundation
 
 var counter128bit: UInt128 = 0
+var cardArray = Array(repeating: String(), count: 70)
 
-func getPassword() -> String {
+func getPasswords() -> String {
     var password = ""
-    var dividend = getCharacterIndex(counter: counter128bit)
     
-    for _ in 0...3 {
-        let reminder = dividend%64
-        dividend = dividend/64
-        print(dividend)
-        let characterIndexStr = String(reminder)
-        let characterIndex = Int(characterIndexStr)
+    for i in 0..<70 {
+        for _ in 0..<4 {
+            let characterIndexStr = String(getCharacterIndex(counter: counter128bit))
+            let characterIndex = Int(characterIndexStr)
+            counter128bit += 1
+            
+            password = password + alfabetSet[characterIndex!]
+        }
         
-        password = password + alfabetSet[characterIndex!]
+        cardArray[i].append(password)
+        password = ""
     }
-    
+
     counter128bit += 1
-    
+
     return password
 }
 

@@ -13,12 +13,14 @@ class PasswordsViewController: UIViewController {
     @IBOutlet weak var printPassword: UITextField!
     
     @IBAction func newCardButton(_ sender: UIButton) {
-        printPassword.text = getPassword()
+        printPassword.text = getPasswords()
+        //let encodedKey = generateEncodedKey()
+        //print(encodedKey)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        printPassword.text = getPassword()
+        printPassword.text = getPasswords()
     }
 }
 
