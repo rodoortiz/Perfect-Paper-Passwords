@@ -10,17 +10,19 @@ import UIKit
 
 class PasswordsViewController: UIViewController {
     
-    @IBOutlet weak var printPassword: UITextField!
+   
+    @IBOutlet weak var printPasswords: UILabel!
     
     @IBAction func newCardButton(_ sender: UIButton) {
-        printPassword.text = getPasswords()
-        //let encodedKey = generateEncodedKey()
-        //print(encodedKey)
+        printPasswords.text = "xxx"
+        printPasswords.text = getPasswords()[0]
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        printPassword.text = getPasswords()
+        
+        printPasswords.text = getPasswords()[0]
     }
 }
 

@@ -18,7 +18,7 @@ func generateEncodedKey() -> String {
     let valueKey = generateKey().withUnsafeBytes{
         return Data(Array($0)).base64EncodedString()
     }
-    
+
     return valueKey
 }
 
@@ -28,9 +28,9 @@ func counter() -> UInt128 {
     return counter128bit
 }
 
-func getCharacterIndex(counter: UInt128) -> UInt128 {
+func getCharacterIndex(counter: UInt128, key: SymmetricKey) -> UInt128 {
     let dataCounter: Data = withUnsafeBytes(of: counter) { Data($0) }
-    let sealedBox = try! AES.GCM.seal(dataCounter, using: generateKey())
+    let sealedBox = try! AES.GCM.seal(dataCounter, using: key)
     let cipher = sealedBox.ciphertext.withUnsafeBytes {$0.bindMemory(to: UInt128.self)[0]}
 
     return (cipher%64)

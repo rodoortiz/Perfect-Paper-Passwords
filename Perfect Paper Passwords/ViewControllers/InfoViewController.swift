@@ -12,8 +12,12 @@ class InfoViewController: UIViewController {
 
     @IBOutlet weak var keyLabel: UILabel!
         
+    @IBOutlet weak var characterSet: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        characterSet.text = "!#%+23456789:=?@ABCDEFGHJKLMNPRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
     }
     
     
