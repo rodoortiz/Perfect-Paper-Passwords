@@ -14,8 +14,8 @@ func generateKey() -> SymmetricKey {
 
     return key
 }
-func generateEncodedKey() -> String {
-    let valueKey = generateKey().withUnsafeBytes{
+func generateEncodedKey(key: SymmetricKey) -> String {
+    let valueKey = key.withUnsafeBytes{
         return Data(Array($0)).base64EncodedString()
     }
     return valueKey

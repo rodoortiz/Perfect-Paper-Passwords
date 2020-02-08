@@ -10,6 +10,8 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    var keyString: String = ""
+    
     @IBOutlet weak var keyLabel: UILabel!
         
     @IBOutlet weak var characterSet: UILabel!
@@ -17,6 +19,7 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        keyLabel.text = keyString
         characterSet.text = "!#%+23456789:=?@ABCDEFGHJKLMNPRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
     }
     
