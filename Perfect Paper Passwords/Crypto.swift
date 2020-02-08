@@ -21,6 +21,11 @@ func generateEncodedKey(key: SymmetricKey) -> String {
     return valueKey
 }
 
+func saveKey(key: SymmetricKey) -> SymmetricKey {
+    let savedKey = key
+    return savedKey
+}
+
 func counter() -> UInt128 {
     counter128bit += 1
     
