@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import CryptoKit
 
 var counter128bit: UInt128 = 0
 var cardArray = Array(repeating: String(), count: 70)
 
-func getPasswords() -> [String] {
+func getPasswords(key: SymmetricKey) -> [String] {
     var password = ""
     var cardArray = Array(repeating: String(), count: 70)
-    let key = generateKey()
-    for i in 0..<70 {
+    
+    for i in 0..<25 {
         for _ in 0..<4 {
             let characterIndexStr = String(getCharacterIndex(counter: counter128bit, key: key))
             let characterIndex = Int(characterIndexStr)

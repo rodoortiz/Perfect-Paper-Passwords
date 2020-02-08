@@ -18,7 +18,6 @@ func generateEncodedKey() -> String {
     let valueKey = generateKey().withUnsafeBytes{
         return Data(Array($0)).base64EncodedString()
     }
-
     return valueKey
 }
 
@@ -33,5 +32,7 @@ func getCharacterIndex(counter: UInt128, key: SymmetricKey) -> UInt128 {
     let sealedBox = try! AES.GCM.seal(dataCounter, using: key)
     let cipher = sealedBox.ciphertext.withUnsafeBytes {$0.bindMemory(to: UInt128.self)[0]}
 
-    return (cipher%64)
+    return (cipher%UInt128(alfabetSet.count))
 }
+
+

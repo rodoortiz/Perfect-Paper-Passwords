@@ -27,8 +27,15 @@
                                     <segue destination="3Q6-i8-c9a" kind="presentation" id="h6v-yV-8mx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6z-bR-chF">
+                                <rect key="frame" x="71" y="229" width="273" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZX-ii-8cl">
-                                <rect key="frame" x="58" y="728" width="298" height="55"/>
+                                <rect key="frame" x="58" y="716" width="298" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="28"/>
                                 <state key="normal" title="Generate new card">
@@ -38,13 +45,6 @@
                                     <action selector="newCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1f-Zf-OSS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6z-bR-chF">
-                                <rect key="frame" x="71" y="279" width="273" height="312"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.69661899215993861" green="0.92704101995333887" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -106,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEr-1A-IjI">
-                                <rect key="frame" x="27" y="381" width="360" height="80"/>
+                                <rect key="frame" x="34" y="367" width="360" height="80"/>
                                 <color key="backgroundColor" red="0.21185234450000001" green="0.26995195529999999" blue="0.3199357551" alpha="0.18667059080000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="DZ6-ju-osv"/>
@@ -129,21 +129,21 @@
                             <constraint firstItem="Hv5-ey-Aru" firstAttribute="trailing" secondItem="gRu-Sd-nXQ" secondAttribute="trailing" constant="218" id="L6p-uu-p2b"/>
                             <constraint firstItem="7sR-gK-3q6" firstAttribute="top" secondItem="Hv5-ey-Aru" secondAttribute="top" constant="37" id="OPh-43-7x6"/>
                             <constraint firstItem="Nx8-k9-Is9" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="49" id="Pia-zw-pst"/>
-                            <constraint firstItem="Hv5-ey-Aru" firstAttribute="bottom" secondItem="sEr-1A-IjI" secondAttribute="bottom" constant="347" id="Pxv-xz-Wm6"/>
-                            <constraint firstItem="Hv5-ey-Aru" firstAttribute="trailing" secondItem="sEr-1A-IjI" secondAttribute="trailing" constant="27" id="QbP-kG-dbz"/>
+                            <constraint firstItem="Hv5-ey-Aru" firstAttribute="bottom" secondItem="sEr-1A-IjI" secondAttribute="bottom" constant="361" id="Pxv-xz-Wm6"/>
+                            <constraint firstItem="Hv5-ey-Aru" firstAttribute="trailing" secondItem="sEr-1A-IjI" secondAttribute="trailing" constant="20" id="QbP-kG-dbz"/>
                             <constraint firstItem="gRu-Sd-nXQ" firstAttribute="top" secondItem="Nx8-k9-Is9" secondAttribute="bottom" constant="20" id="R84-B3-fZX"/>
                             <constraint firstItem="npl-qX-tbx" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="152" id="YlJ-pe-HwV"/>
-                            <constraint firstItem="Hv5-ey-Aru" firstAttribute="bottom" secondItem="sEr-1A-IjI" secondAttribute="bottom" constant="347" id="ZSj-1o-H03"/>
+                            <constraint firstItem="Hv5-ey-Aru" firstAttribute="bottom" secondItem="sEr-1A-IjI" secondAttribute="bottom" constant="361" id="ZSj-1o-H03"/>
                             <constraint firstItem="Hv5-ey-Aru" firstAttribute="trailing" secondItem="haK-yg-PfT" secondAttribute="trailing" constant="173" id="ZgU-FL-KBc"/>
                             <constraint firstItem="7sR-gK-3q6" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="126" id="bkK-1Z-Ult"/>
                             <constraint firstItem="Hv5-ey-Aru" firstAttribute="trailing" secondItem="bEW-Rh-ANR" secondAttribute="trailing" constant="27" id="fYm-Ts-e9j"/>
                             <constraint firstItem="Hv5-ey-Aru" firstAttribute="trailing" secondItem="npl-qX-tbx" secondAttribute="trailing" constant="152" id="h0Y-eZ-PaK"/>
                             <constraint firstItem="bEW-Rh-ANR" firstAttribute="top" secondItem="npl-qX-tbx" secondAttribute="bottom" constant="8" id="hsx-ZB-tWJ"/>
                             <constraint firstItem="haK-yg-PfT" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="49" id="q01-fg-WQU"/>
-                            <constraint firstItem="sEr-1A-IjI" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="27" id="rtv-2i-EhV"/>
+                            <constraint firstItem="sEr-1A-IjI" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="34" id="rtv-2i-EhV"/>
                             <constraint firstItem="npl-qX-tbx" firstAttribute="top" secondItem="7sR-gK-3q6" secondAttribute="bottom" constant="24.5" id="tHN-VS-5CI"/>
                             <constraint firstItem="gRu-Sd-nXQ" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="49" id="up7-5K-wtE"/>
-                            <constraint firstItem="sEr-1A-IjI" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="27" id="ur0-c5-B7L"/>
+                            <constraint firstItem="sEr-1A-IjI" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="34" id="ur0-c5-B7L"/>
                             <constraint firstItem="bEW-Rh-ANR" firstAttribute="leading" secondItem="Hv5-ey-Aru" secondAttribute="leading" constant="27" id="vza-rt-l0N"/>
                             <constraint firstItem="bEW-Rh-ANR" firstAttribute="top" secondItem="npl-qX-tbx" secondAttribute="bottom" constant="8" id="zwx-54-aHM"/>
                         </constraints>
