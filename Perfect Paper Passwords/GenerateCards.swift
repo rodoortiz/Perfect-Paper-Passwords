@@ -20,7 +20,6 @@ func getPasswords(key: SymmetricKey) -> [String] {
         for _ in 0..<4 {
             let characterIndexStr = String(getCharacterIndex(counter: counter128bit, key: key))
             let characterIndex = Int(characterIndexStr)
-            counter128bit += 1
             
             password = password + alfabetSet[characterIndex!]
         }
@@ -28,6 +27,7 @@ func getPasswords(key: SymmetricKey) -> [String] {
         cardArray[i].append(password)
         password = ""
     }
+    
     counter128bit += 1
     
     return cardArray

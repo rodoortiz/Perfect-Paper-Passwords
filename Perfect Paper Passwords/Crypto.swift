@@ -21,17 +21,6 @@ func generateEncodedKey(key: SymmetricKey) -> String {
     return valueKey
 }
 
-func saveKey(key: SymmetricKey) -> SymmetricKey {
-    let savedKey = key
-    return savedKey
-}
-
-func counter() -> UInt128 {
-    counter128bit += 1
-    
-    return counter128bit
-}
-
 func getCharacterIndex(counter: UInt128, key: SymmetricKey) -> UInt128 {
     let dataCounter: Data = withUnsafeBytes(of: counter) { Data($0) }
     let sealedBox = try! AES.GCM.seal(dataCounter, using: key)

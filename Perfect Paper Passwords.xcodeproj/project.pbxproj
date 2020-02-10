@@ -11,7 +11,6 @@
 		4D8C955523ECD47A0093A83A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C955423ECD47A0093A83A /* InfoViewController.swift */; };
 		4D8C955A23ED87160093A83A /* GenerateCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C955923ED87160093A83A /* GenerateCards.swift */; };
 		4D8C955C23ED93290093A83A /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C955B23ED93290093A83A /* Alphabet.swift */; };
-		4D8C955F23EE16740093A83A /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C955E23EE16740093A83A /* Keychain.swift */; };
 		4DF158D123EBC1C5000C5626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D023EBC1C5000C5626 /* AppDelegate.swift */; };
 		4DF158D323EBC1C5000C5626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */; };
 		4DF158D523EBC1C5000C5626 /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF158D423EBC1C5000C5626 /* PasswordsViewController.swift */; };
@@ -26,7 +25,6 @@
 		4D8C955423ECD47A0093A83A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		4D8C955923ED87160093A83A /* GenerateCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCards.swift; sourceTree = "<group>"; };
 		4D8C955B23ED93290093A83A /* Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
-		4D8C955E23EE16740093A83A /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		4DF158CD23EBC1C5000C5626 /* Perfect Paper Passwords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Perfect Paper Passwords.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF158D023EBC1C5000C5626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF158D223EBC1C5000C5626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 		4D8C956023EED11C0093A83A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				4D8C955E23EE16740093A83A /* Keychain.swift */,
 				4DF158E423EBC4C2000C5626 /* UInt128.swift */,
 			);
 			path = Utils;
@@ -185,7 +182,6 @@
 				4D8C955A23ED87160093A83A /* GenerateCards.swift in Sources */,
 				4D8C955323ECB26E0093A83A /* Crypto.swift in Sources */,
 				4DF158D323EBC1C5000C5626 /* SceneDelegate.swift in Sources */,
-				4D8C955F23EE16740093A83A /* Keychain.swift in Sources */,
 				4D8C955523ECD47A0093A83A /* InfoViewController.swift in Sources */,
 				4DF158E523EBC4C2000C5626 /* UInt128.swift in Sources */,
 				4D8C955C23ED93290093A83A /* Alphabet.swift in Sources */,
